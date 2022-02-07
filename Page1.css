@@ -2,19 +2,30 @@ html {
     font-family: 'Roboto', sans-serif;
 }
 
+ @media (max-width: 700px) {
+     header li a {
+         flex-direction: column;
+     }    
+ }
+
+*{
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
-    background-color: #efefef;
+    padding: 0;
+    background-color: #f0f0f0;
 }
 
 header {
-    background: rgb(32 32 32);
+    background: #202020;
     color: white;
     padding: 20px 0px;
+    width: 100%;
 }
 
 #menu {
-    background: rgb(32 32 32);
     width: 1200px;
     height: 26px;
 }
@@ -31,6 +42,7 @@ header {
 
 #menu li {
     float: left;
+
 }
 
 #menu a {
@@ -41,21 +53,34 @@ header {
 }
 
 #titulo1 {
+    text-align: center;
     position: relative;
-    left: 500px;
+
 }
 
 .texto1 {
-    font-family: 'Roboto', sans-serif;
+    margin: 12px;
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 12px;
+}
+
+.compartir {
+    margin: 12px;
+    padding: 12px;
+    background-color: white;
+    border-radius: 12px;
+
 }
 
 #titulo2 {
     font-family: 'Roboto', sans-serif;
+    text-align: left;
 }
 
 .imagen-portada {
     transition: box-shadow 0.3s ease;
-    width: 720px;
+    width: 740px;
     margin: 0 auto;
     background-color: white;
     border-radius: 12px;    
@@ -63,14 +88,32 @@ header {
     cursor: pointer;
 }
 
-.imagen-portada:hover {
-    box-shadow: 0 0.1rem 0.4rem rgb(0,0,0.1);   
+#parrafo {
+    text-align: right;
 }
 
+.imagen-portada:hover {
+    box-shadow: 0 0.1rem 0.4rem #000000;   
+}
+
+h3 {
+    text-align: center;
+}
+/*/Aqui va lo que quite/*/
+
+.videos {
+    top: 0 auto;
+    background-color: white;
+    border-radius: 12px;
+    margin: 10px;
+    padding: 12px;
+}
+
+/*/Aqui termina/*/
 footer {
     background-color: #222;
     padding: 1rem;
-    color: #fff;
+    color: #fff;    
 }
 
 footer section a {
