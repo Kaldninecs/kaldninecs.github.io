@@ -19,7 +19,7 @@ body {
 }
 
 header {
-    background: #202020;
+    background: transparent;
     color: white;
     padding: 20px 0px;
     width: 100%;
@@ -27,7 +27,7 @@ header {
 
 #menu {
     width: 1200px;
-    height: 26px;
+    height: 32px;
 }
 
 #menu a:hover{
@@ -42,20 +42,52 @@ header {
 
 #menu li {
     float: left;
-
+    align-items: center;
 }
 
-#menu a {
+.twitch {
     color: white;
     text-decoration: none;
     display: block;
-    padding: 1px 26px;
+    padding: 5px 20px;
+}
+
+.youtube {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 5px 25px;
+}
+
+.gta5 {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 5px 25px;
+}
+
+.Dorado {   
+    position: relative;
+    object-fit: fill;
+    max-width: 30px;
+    left: 20px;
+    max-height: 30px;
+}
+
+video {
+    position: fixed;
+    max-width: 100%;
+    min-height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -1;
 }
 
 #titulo1 {
     text-align: center;
     position: relative;
-
+    color: #fff;
 }
 
 .texto1 {
@@ -75,7 +107,11 @@ header {
 
 #titulo2 {
     font-family: 'Roboto', sans-serif;
-    text-align: left;
+    text-align: center;
+}
+
+.imagen1 {
+    background-image: url(/Kaldninecs/html/Kaldninecs.jpeg);
 }
 
 .imagen-portada {
@@ -96,20 +132,18 @@ header {
     box-shadow: 0 0.1rem 0.4rem #000000;   
 }
 
-h3 {
+.python-title {
+    color: #fff;
     text-align: center;
 }
-/*/Aqui va lo que quite/*/
 
-.videos {
-    top: 0 auto;
-    background-color: white;
+.python-text {
     border-radius: 12px;
-    margin: 10px;
+    background-color: #fff;
+    margin: 12px;
     padding: 12px;
 }
 
-/*/Aqui termina/*/
 footer {
     background-color: #222;
     padding: 1rem;
