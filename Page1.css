@@ -32,6 +32,7 @@ header {
 
 #menu a:hover{
     color: #1DDBA2;
+    filter: drop-shadow(0 0 2px #1DDBA2);
 }
 
 #menu ul {
@@ -46,6 +47,8 @@ header {
 }
 
 .twitch {
+    position: relative;
+    left: 30px;
     color: white;
     text-decoration: none;
     display: block;
@@ -53,6 +56,8 @@ header {
 }
 
 .youtube {
+    position: relative;
+    left: 30px;
     color: white;
     text-decoration: none;
     display: block;
@@ -60,6 +65,8 @@ header {
 }
 
 .gta5 {
+    position: relative;
+    left: 30px;
     color: white;
     text-decoration: none;
     display: block;
@@ -67,7 +74,7 @@ header {
 }
 
 .Dorado {   
-    position: relative;
+    position:relative;
     object-fit: fill;
     max-width: 30px;
     left: 20px;
@@ -97,13 +104,7 @@ video {
     padding: 12px;
 }
 
-.compartir {
-    margin: 12px;
-    padding: 12px;
-    background-color: white;
-    border-radius: 12px;
 
-}
 
 #titulo2 {
     font-family: 'Roboto', sans-serif;
@@ -145,17 +146,8 @@ video {
 }
 
 footer {
-    background-color: #222;
+    background-color: transparent;
     padding: 1rem;
     color: #fff;    
 }
 
-footer section a {
-    color: #fff;
-    text-decoration: none;
-
-}
-
-footer section a:hover{
-    color:#1DDBA2
-}
