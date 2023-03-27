@@ -1,0 +1,85 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    display: flex;
+    min-height: 70px;
+    background-color: #92c5fc;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+nav a {
+    font-weight: 600;
+    padding-right: 10px;
+}
+
+nav a:hover {
+    color: white;
+}
+
+#titulo1 {
+    text-align: center;
+    position: relative;
+    color: black;
+}
+
+.texto1 {
+    margin: 12px;
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 12px;
+}
+
+
+.imagen1 {
+    background-image: url(IMG_4147.JPG);
+}
+
+.imagen-portada {
+    transition: box-shadow 0.3s ease;
+    width: 740px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 12px;    
+    padding: 1px 10px;
+    cursor: pointer;
+}
+
+.imagen-portada:hover {
+    box-shadow: 0 0.1rem 0.4rem #000000;   
+}
+
+#parrafo {
+    text-align: right;
+}
+
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+    }
+
+    nav{
+        padding: 10px 0px;
+    }
+}
